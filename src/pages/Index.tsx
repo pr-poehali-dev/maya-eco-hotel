@@ -64,8 +64,12 @@ const Index = () => {
                 Откройте для себя уникальный отдых на природе
               </h1>
               <p className="text-xl text-muted-foreground">
-                Уютные 8-местные палатки с видом на озеро. Рыбалка, семейный и корпоративный отдых в гармонии с природой.
+                Уютные 8-местные палатки с видом на озеро. Рыбалка, семейный и корпоративный отдых в гармонии с природой. Беларусь.
               </p>
+              <div className="bg-primary/10 border-l-4 border-primary p-4 rounded-r-lg">
+                <p className="text-lg font-semibold text-foreground mb-1">От 300 руб/сутки</p>
+                <p className="text-sm text-muted-foreground">Скидки при длительном проживании</p>
+              </div>
               <div className="flex gap-4">
                 <Button 
                   size="lg" 
@@ -117,6 +121,60 @@ const Index = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Комфортабельные глэмпинг-палатки с видом на озеро
             </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-12">
+            <Card className="border-2 border-primary/20 shadow-lg">
+              <CardHeader className="bg-gradient-to-r from-primary/5 to-secondary/5">
+                <CardTitle className="font-heading text-3xl text-center">Цены на проживание</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between p-4 bg-secondary/5 rounded-lg">
+                      <div className="flex items-center gap-3">
+                        <Icon name="Calendar" className="text-secondary" size={24} />
+                        <span className="font-semibold">Будние дни</span>
+                      </div>
+                      <span className="text-2xl font-heading font-bold text-secondary">300₽</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4 bg-accent/5 rounded-lg">
+                      <div className="flex items-center gap-3">
+                        <Icon name="PartyPopper" className="text-accent" size={24} />
+                        <span className="font-semibold">Выходные/праздники</span>
+                      </div>
+                      <span className="text-2xl font-heading font-bold text-accent">400₽</span>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <h4 className="font-heading font-semibold text-lg mb-3">Скидки при длительном проживании:</h4>
+                    <div className="flex items-center gap-2 text-muted-foreground">
+                      <Icon name="TrendingDown" size={18} className="text-primary" />
+                      <span>2-е сутки: <strong>-30%</strong> от базовой цены</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-muted-foreground">
+                      <Icon name="TrendingDown" size={18} className="text-primary" />
+                      <span>3-и сутки и далее: <strong>-50%</strong> от базовой цены</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-muted-foreground">
+                      <Icon name="Users" size={18} className="text-primary" />
+                      <span>Каждый доп. человек: <strong>+50₽</strong></span>
+                    </div>
+                    <div className="flex items-center gap-2 text-accent font-semibold">
+                      <Icon name="Baby" size={18} />
+                      <span>Дети до 7 лет: <strong>бесплатно</strong></span>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-muted/30 rounded-lg border border-border">
+                  <p className="text-sm text-muted-foreground text-center">
+                    <Icon name="Info" size={16} className="inline mr-2" />
+                    Дети до 7 лет спят с родителями. Детская кроватка предоставляется по запросу.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -478,7 +536,7 @@ const Index = () => {
                   <Icon name="Phone" className="text-primary" size={28} />
                 </div>
                 <h3 className="font-heading font-semibold text-xl mb-2">Телефон</h3>
-                <p className="text-muted-foreground">+7 (XXX) XXX-XX-XX</p>
+                <a href="tel:+375333045407" className="text-primary hover:underline font-semibold">+375 (33) 304-54-07</a>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -496,7 +554,7 @@ const Index = () => {
                   <Icon name="MapPin" className="text-accent" size={28} />
                 </div>
                 <h3 className="font-heading font-semibold text-xl mb-2">Адрес</h3>
-                <p className="text-muted-foreground">Озеро Майя, Россия</p>
+                <p className="text-muted-foreground">Беларусь</p>
               </CardContent>
             </Card>
           </div>
@@ -538,9 +596,9 @@ const Index = () => {
             <div>
               <h3 className="font-heading font-semibold text-lg mb-4">Контакты</h3>
               <div className="space-y-2">
-                <p className="text-background/80">+7 (XXX) XXX-XX-XX</p>
+                <a href="tel:+375333045407" className="block text-background/80 hover:text-background">+375 (33) 304-54-07</a>
                 <p className="text-background/80">info@maya-hotel.ru</p>
-                <p className="text-background/80">Озеро Майя, Россия</p>
+                <p className="text-background/80">Беларусь</p>
               </div>
             </div>
           </div>
