@@ -183,7 +183,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
                   <Icon name="Tent" className="text-secondary" size={32} />
                 </div>
-                <CardTitle className="font-heading text-2xl">Ятный паль</CardTitle>
+                <CardTitle className="font-heading text-2xl">Майя</CardTitle>
                 <CardDescription>8-местная глэмпинг палатка</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
@@ -542,10 +542,10 @@ const Index = () => {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Mail" className="text-secondary" size={28} />
+                  <Icon name="Send" className="text-secondary" size={28} />
                 </div>
-                <h3 className="font-heading font-semibold text-xl mb-2">Email</h3>
-                <p className="text-muted-foreground">info@maya-hotel.ru</p>
+                <h3 className="font-heading font-semibold text-xl mb-2">Telegram</h3>
+                <a href="https://t.me/MayaOTELBot" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">@MayaOTELBot</a>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -597,7 +597,7 @@ const Index = () => {
               <h3 className="font-heading font-semibold text-lg mb-4">Контакты</h3>
               <div className="space-y-2">
                 <a href="tel:+375333045407" className="block text-background/80 hover:text-background">+375 (33) 304-54-07</a>
-                <p className="text-background/80">info@maya-hotel.ru</p>
+                <a href="https://t.me/MayaOTELBot" target="_blank" rel="noopener noreferrer" className="block text-background/80 hover:text-background">@MayaOTELBot</a>
                 <p className="text-background/80">Беларусь</p>
               </div>
             </div>
